@@ -1,0 +1,18 @@
+title Post new note SPA
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over browser:
+On the click, the onsubmit event is called on the element of id "notes_form".
+the default behavior is prevented.
+Then we update the array notes and redrawNotes(), then we send to the server.
+end note
+
+note over server:
+An object is sent to the server in the body of the request.
+The object is saved by the server.
+end note
+server->browser: Status 201 Created 
+note over browser:
+There's no redirection this time.
+
+end note

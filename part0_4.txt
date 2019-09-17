@@ -1,0 +1,13 @@
+title Post new note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+note over server:
+An object is sent to the server in the body of the request.
+The object is saved by the server.
+end note
+server->browser: Status 302 found 
+note over browser:
+In the response headers Location: /notes makes the browser to be redirected to HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+It makes the browser to perform the GET request at this address.
+
+end note
